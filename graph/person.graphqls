@@ -1,0 +1,20 @@
+type Person {
+    id: ID!
+    name: String!
+    age: Int!
+    isMale: Boolean!
+}
+
+type QUery {
+    persons: [Person!]!
+}
+
+type Mutation {
+    createPerson{}
+}
+
+type CreatePersonInput {
+    name: String!
+    age: Int!
+    isMale: Boolean!
+}
