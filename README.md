@@ -11,12 +11,12 @@ Esta é uma API de gerenciamento de currículos, desenvolvida em **Go**, utiliza
 
 ## 📌 Instalação e Configuração
 
-1. **Clone o repositório**
+#### 1. Clone o repositório
    
    git clone https://github.com/seuusuario/cv-manager.git
    cd cv-manager
    
-2. **Configuração do Banco de Dados**
+#### 2. Configuração do Banco de Dados
 
 Certifique-se de que o PostgreSQL esteja instalado.
 
@@ -24,10 +24,10 @@ Crie um banco de dados chamado cv_manager.
 
 Configure as credenciais no arquivo .env.
 
-3. **Instale as dependências**
+#### 3. Instale as dependências
 
 go mod tidy
 
-4. **Inicie o servidor**
+#### 4. Inicie o servidor
 
 go run main.go
