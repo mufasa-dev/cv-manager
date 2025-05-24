@@ -2,7 +2,7 @@
 
 Esta é uma API de gerenciamento de currículos, desenvolvida em **Go**, utilizando **PostgreSQL** como banco de dados e **GraphQL** para consultas e mutações.
 
-![Skills](https://skills.syvixor.com/api/icons?i=go,gin,postgresql,graphql,github,vscode,postman)
+![Skills](https://skills.syvixor.com/api/icons?i=go,gin,postgresql,graphql,swagger,github,vscode,postman)
 
 ## 🚀 Tecnologias Utilizadas
 - **Go** (Golang) - Linguagem de programação principal
