@@ -3,7 +3,6 @@ package main
 import (
 	"log"
 	"net/http"
-	"os"
 
 	"github.com/99designs/gqlgen/graphql/handler"
 	"github.com/99designs/gqlgen/graphql/handler/extension"
@@ -12,17 +11,17 @@ import (
 	"github.com/99designs/gqlgen/graphql/playground"
 	"github.com/go-chi/chi"
 	"github.com/go-chi/cors"
+	"github.com/mufasa-dev/cv-manager/config"
 	"github.com/mufasa-dev/cv-manager/generated"
 	"github.com/mufasa-dev/cv-manager/resolvers"
 	"github.com/vektah/gqlparser/v2/ast"
 )
 
-const defaultPort = "8080"
-
 func main() {
-	port := os.Getenv("PORT")
+	env := config.GetEnv()
+	port := env.Port
 	if port == "" {
-		port = defaultPort
+		port = config.DEFAULT_PORT
 	}
 
 	router := chi.NewRouter()
