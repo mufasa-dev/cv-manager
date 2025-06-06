@@ -5,12 +5,8 @@ type Person {
     isMale: Boolean!
 }
 
-type QUery {
+extend type Query {
     persons: [Person!]!
-}
-
-type Mutation {
-    createPerson{}
 }
 
 type CreatePersonInput {
