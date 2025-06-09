@@ -1,35 +1,42 @@
 # CV Manager API
 
-Esta é uma API de gerenciamento de currículos, desenvolvida em **Go**, utilizando **PostgreSQL** como banco de dados e **GraphQL** para consultas e mutações.
-  
-![Skills](https://skills.syvixor.com/api/icons?i=go,gin,postgresql,graphql,swagger,github,vscode,postman)
+This is a resume management API developed in **Go**, using **PostgreSQL** as the database and **GraphQL** for queries and mutations.
 
-## 🚀 Tecnologias Utilizadas
-- **Go** (Golang) - Linguagem de programação principal
-- **PostgreSQL** - Banco de dados relacional
-- **GraphQL** - API flexível para consultas e mutações
-- **GORM** - ORM para interação com PostgreSQL
-- **Gin** - Framework HTTP para gerenciamento de rotas
+![Skills](https://skills.syvixor.com/api/icons?i=go,chi,postgresql,graphql,swagger,github,vscode,postman)
 
-## 📌 Instalação e Configuração
+## 🚀 Technologies Used
+- **Go** (Golang) - Main programming language
+- **PostgreSQL** - Relational database
+- **GraphQL** - Flexible API for queries and mutations
+- **GORM** - ORM for interacting with PostgreSQL
+- **Chi** - Lightweight HTTP router for route management
 
-#### 1. Clone o repositório
-   
-   git clone https://github.com/seuusuario/cv-manager.git
-   cd cv-manager
-   
-#### 2. Configuração do Banco de Dados
+## 📌 Installation & Setup
 
-Certifique-se de que o PostgreSQL esteja instalado.
+#### 1. Clone the repository
 
-Crie um banco de dados chamado cv_manager.
+```bash
+git clone https://github.com/yourusername/cv-manager.git
+cd cv-manager
+````
 
-Configure as credenciais no arquivo .env.
+#### 2. Database Configuration
 
-#### 3. Instale as dependências
+Make sure PostgreSQL is installed.
 
+Create a database named `cv_manager`.
+
+Set your database credentials in the `.env` file.
+
+#### 3. Install dependencies
+
+```bash
 go mod tidy
+```
 
-#### 4. Inicie o servidor
+#### 4. Start the server
 
+```bash
 go run main.go
+```
+
